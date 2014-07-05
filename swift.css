@@ -1,0 +1,156 @@
+* {
+vertical-align: baseline;
+font-weight: inherit;
+font-family: inherit;
+font-style: inherit;
+font-size: 100%;
+border: 0 none;
+outline: 0;
+padding: 0;
+margin: 0;
+}
+
+.big-wrapper {
+	width: 100%;
+}
+
+.banner {
+	max-width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(images/swift-banner.png);
+	background-attachment:fixed;
+}
+
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+	padding-top: 14%;
+	padding-bottom: 40px;
+}
+
+.name {
+	font-size: 50px;
+	color: #ffffff;
+	font-family: "Myriad Pro", sans-serif;
+	text-align: center;
+	padding-bottom: 12%;
+}
+
+.content {
+	width: 70%;
+	min-width: 350px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.about h1, .about p, .about ul, .about li {
+	color: #ED9121;
+	font-family: "Myriad Pro", sans-serif;
+	text-align: center;
+}
+
+.about h1 {
+	font-size: 45px;
+	margin-bottom: 20px;
+}
+
+.about p {
+	font-size: 23px;
+}
+
+.about ul {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.about li {
+	display: inline;
+}
+
+.about {
+	width: 100%;
+	background-image: url(images/crossword-old.png);
+	padding-top: 50px;
+	padding-bottom: 120px;
+}
+
+.footer {
+	background-color: #f7aa21;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+
+.footer h1, .footer h2, .footer h3, .footer p, .footer li {
+	color: #ffffff;
+	font-family: "Myriad Pro", sans-serif;
+	text-align: center;
+}
+
+.footer p {
+	padding-bottom: 40px;
+	font-size: 23px;
+	font-weight: 200;
+}
+
+.footer li {
+	list-style-type: none;
+}
+
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 50px;
+}
+
+.title-about {
+	border-bottom: solid;
+	border-bottom-width: 1px;
+	width: 120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.button { 
+   border-top: 1px solid #e8ab12;
+   background: #ffa506;
+   
+   padding: 9px 25px;
+   
+   -webkit-box-shadow: #e88824 0 6px 0;
+   -moz-box-shadow: #e88824 0 6px 0;
+   box-shadow: #e88824 0 6px 0;
+
+   color: white;
+   font-size: 20px;
+   font-family: "Myriad Pro", sans-serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+
+.button:active {
+   border-top-color: #e69915;
+   background: #e88824;
+   }
+
+input {
+    border: 1px solid #808284; 
+    -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+    margin-top: 5px;
+    padding: 11px;
+    background: #ffffff;
+    margin: 0 0 10px 0;
+    margin-right: 25px;
+    width: 260px;
+    color: #545454;
+    font-size: 20px;
+	font-family: "Myriad Pro", sans-serif;
+}
+

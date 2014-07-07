@@ -93,7 +93,7 @@ margin: 0;
 }
 
 
-@media (max-width: 40em) {
+@media (max-width: 480px) {
 	.phone-hide {
 		display: none;
 	}

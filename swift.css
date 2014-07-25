@@ -78,14 +78,17 @@ margin: 0;
 
 .issue {
 	width: 100%;
-	background: rgb(239,41,41);
-	background: -moz-radial-gradient(center, ellipse cover, rgba(239,41,41,1) 0%, rgba(239,41,41,1) 48%, rgba(175,9,9,1) 100%);
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(239,41,41,1)), color-stop(48%,rgba(239,41,41,1)), color-stop(100%,rgba(175,9,9,1)));
-	background: -webkit-radial-gradient(center, ellipse cover, rgba(239,41,41,1) 0%,rgba(239,41,41,1) 48%,rgba(175,9,9,1) 100%);
-	background: -o-radial-gradient(center, ellipse cover, rgba(239,41,41,1) 0%,rgba(239,41,41,1) 48%,rgba(175,9,9,1) 100%);
-	background: -ms-radial-gradient(center, ellipse cover, rgba(239,41,41,1) 0%,rgba(239,41,41,1) 48%,rgba(175,9,9,1) 100%);
-	background: radial-gradient(ellipse at center, rgba(239,41,41,1) 0%,rgba(239,41,41,1) 48%,rgba(175,9,9,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef2929', endColorstr='#af0909',GradientType=1 );
+
+	background: #f22630; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #f22630 3%, #f2263b 53%, #f22b35 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(3%,#f22630), color-stop(53%,#f2263b), color-stop(100%,#f22b35)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #f22630 3%,#f2263b 53%,#f22b35 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #f22630 3%,#f2263b 53%,#f22b35 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #f22630 3%,#f2263b 53%,#f22b35 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #f22630 3%,#f2263b 53%,#f22b35 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f22630', endColorstr='#f22b35',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+	
 	padding-top: 50px;
 	padding-bottom: 80px;
 	}
@@ -103,7 +106,8 @@ margin: 0;
 
 .issue li {
 	list-style-type: none;
-	line-height: 35px;
+
+	padding-top: 18px;
 	font-size: 23px;
 	font-weight: 200;
 }
@@ -226,7 +230,7 @@ margin: 0;
 .tools {
 	max-width: 560px;
 	margin: 0 auto;
-	border-left: 5px solid #800000 ;
+	border-left: 5px solid #F22B35 ;
 	margin-bottom: 50px;
 	padding-right: 20px;
 }
@@ -237,13 +241,13 @@ margin: 0;
 }
 
 .tools {
-	color: #800000;
+	color: #F22B35;
 }
 
 .tools h2 {
 	margin-top: 10px;
 	font-size: 23px;
-	color: #800000 ;
+	color: #F22B35 ;
 }
 
 .tools p, .tools a {
@@ -363,7 +367,7 @@ margin: 0;
 		max-width: 100%;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-image: url(images/swift-banner.png);
+		background-image: url(images/Swift-Development.png);
 		background-attachment:fixed;
 	}
 	input {

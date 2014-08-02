@@ -22,9 +22,11 @@
 	
 	
 	<div class="big-wrapper">
-		<div class="banner" >
-			<img src="images/swift.png" class="logo" />
-			<h1 class="name">Swift Dev Weekly</h1>
+		<div class="banner">
+			<a href="index.html">
+				<img src="images/swift.png" class="logo" />
+				<h1 class="name">Swift Dev Weekly</h1>
+			</a>
 		</div>
 
 		<div class="crossword-background about">
@@ -53,19 +55,22 @@
 
 		<div class="issue">
 			<div class="center-content">
-				<h3>ISSUE 1</h3>
-				<h1 class="title-issue">2014 JULY 17TH</h1>
+				<h3>ISSUE 3</h3>
+				<h1 class="title-issue">2014 JULY 31st</h1>
 				<!--<img src="line.png" /> -->
 				<h2>Table of Contents</h2>
 				<ul>
-					<li><a class="scroll" href="#hello">Developing iOS8 Apps Using Swift – Part 1- Hello World</a></li>
-					<li><a class="scroll" href="#xcode6">Swift Language Changes in Xcode 6 beta 3</a></li>
-					<li><a class="scroll" href="#features">Interesting Swift Features</a></li>
-
-					<li>The Core Data Stack In Swift</li>
-
-					<li><a class="scroll" href="#flappy">Re-creating Flappy Bird in swift</li>
-					<li><a class="scroll" href="#realm">Realm</li>
+					<li><a class="scroll" href="#ninja">Are you a Swift programming ninja?</a></li>
+					<li><a class="scroll" href="#js">Swift for JavaScript developers</a></li>
+					<li><a class="scroll" href="#ten">10 Things You Should Know About Apple's Swift</a></li>
+					<li><a class="scroll" href="#immutable">Immutable Enumeration in Swift</a></li>
+					<li><a class="scroll" href="#cocoa">Using Swift with Cocoa and Objective-C</a></li>
+					<li><a class="scroll" href="#apple">Interacting with C Pointers</a></li>
+					<li><a class="scroll" href="#memory">Exploring Swift Memory Layout</a></li>
+					<li><a class="scroll" href="#optional">Understanding Optional Chaining</li>
+					<li><a class="scroll" href="#toolbox">Swift Toolbox</li>
+					<li><a class="scroll" href="#video">iOS: Make an Awesome Video Background View Using UIWebView</a></li>
+					<li><a class="scroll" href="#wSwift">Design with Swift</a></li>
 				</ul>
 			</div> <!--end content-->
 		</div> 
@@ -74,50 +79,85 @@
 
 			<div class="news">
 				<h3>NEWS</h3>
-				<a id="xcode6" href="https://developer.apple.com/swift/blog/?id=3">
-				<h2>Swift Language Changes in Xcode 6 beta 3</h2></a>
-				<p>The Swift programming language continues to advance with each new Xcode 6 beta, including new features, syntax enhancements, and behavioural refinements. Xcode 6 beta 3 incorporates some important changes, a few of which we'd like highlight...</p>
-				<a href="https://developer.apple.com/swift/blog/?id=3">www.developer.apple.com</a>
 
-				<h2></h2>
-				<p></p>
+				<a href="http://www.raywenderlich.com/76349/swift-ninja-part-1">
+				<h2 id="ninja">Are you a Swift programming ninja?</h2></a>
+				<p>I'll give you a series of programming challenges in Swift, that you can use to test your Swift knowledge and see if you're a true Swift Ninja.</p>
+
+				<p>And if by any chance you're not feeling so ninja, you'll have that chance to learn the craft! No matter whether you're already advanced or still intermediate in Swift, you'll likely still learn a thing or two...</p>
+				<a href="http://www.raywenderlich.com/76349/swift-ninja-part-1">raywenderlich.com</a>
+
+				<a href="http://www.mircozeiss.com/swift-for-javascript-developers/">
+				<h2 id="js" class="middle">Swift for JavaScript developers</h2></a>
+				<p>Let's have a look at Swift from a JavaScript developer's view. I'll take a look at Classes, Callbacks, Events, Truthy / Falsy and Generices and compare the JS implementation to the Swift implementation...</p>
+				<a href="http://www.mircozeiss.com/swift-for-javascript-developers/">mircozeiss.com</a>
+
+				<a href="http://www.javaworld.com/article/2456964/java-ios-developer/10-things-you-should-know-about-apples-swift.html">
+				<h2 id="ten" class="middle">10 Things You Should Know About Apple's Swift</h2></a>
+				<p>Swift is more like languages such as Ruby and Python than is Objective-C. For example, it's not necessary to end statements with a semicolon in Swift, just like in Python. In Objective-C, on the other hand, it's necessary to do so; forgetting a semicolon at the end of just a single statement can cause errors. If you cut your programming teeth on Ruby and Python, Swift should appeal to you...</p>
+				<a href="http://www.javaworld.com/article/2456964/java-ios-developer/10-things-you-should-know-about-apples-swift.html">www.javaworld.com</a>
+
 
 			</div>
 
 			<div class="code">
 				<h3><span class="icon"></span>CODE</h3>
 
-				<a id="hello" href="http://ios-blog.co.uk/tutorials/developing-ios-apps-using-swift-part-1/">
-				<h2>Developing iOS8 Apps Using Swift – Part 1- Hello World</h2></a>
-				<p>In my efforts to learn the new language, I’ve decided I will be posting regularly as I step through the learning process, sharing everything I find. It is likely as I learn things over time, the course of this tutorial will change. I will update code examples as needed, but not so much that the learning process is not also demonstrated. I think this is also a useful process to see...</p>
-				<a href="http://ios-blog.co.uk/tutorials/developing-ios-apps-using-swift-part-1/">www.ios-blog.co.uk</a>
+				<a href="http://tel.github.io/2014/07/30/immutable_enumeration_in_swift/">
+				<h2 id="immutable" class="middle">Immutable Enumeration in Swift</h2></a>
+				<p>In plain English, a type which instantiates the view from the left is a container of elements of type El which allows us to "uncons truct" elements from the left. Here, uncons means that we take one element away from the contain and return that element and the remainder. This is marked optional in the case that we have an empty container...</p>
+				<a href="http://tel.github.io/2014/07/30/immutable_enumeration_in_swift/">github.io</a>
+				
+				<a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/">
+				<h2 id="cocoa" class="middle">Using Swift with Cocoa and Objective-C</h2></a>
+				<p>Swift is designed to provide seamless compatibility with Cocoa and Objective-C. You can use Objective-C APIs (ranging from system frameworks to your own custom code) in Swift, and you can use Swift APIs in Objective-C. This compatibility makes Swift an easy, convenient, and powerful tool to integrate into your Cocoa app development workflow...</p>
+				<a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/BuildingCocoaApps/">developer.apple.com</a>
 
-				<a id="features" href="https://mikeash.com/pyblog/friday-qa-2014-06-20-interesting-swift-features.html">
-				<h2 class="middle">Interesting Swift Features</h2></a>
-				<p>Roughly six hundred million people have asked me to write something about Swift. I'm hoping to write a series of articles about various aspects of it. For today, I want to start things off by exploring a few Swift features that are interesting and unusual from the perspective of Objective-C and why I think they're going to be good to have...</p>
-				<a href="https://mikeash.com/pyblog/friday-qa-2014-06-20-interesting-swift-features.html">www.mikeash.com</a>
+				<a href="https://developer.apple.com/swift/blog/?id=6">
+				<h2 id="apple" class="middle">Interacting with C Pointers</h2></a>
+				<p>Objective-C and C APIs often require the use of pointers. Data types in Swift are designed to feel natural when working with pointer-based Cocoa APIs, and Swift automatically handles several of the most common use cases for pointers as arguments. In this post we’ll look at how pointer parameters in C can be used with the variables, arrays, and strings in Swift...</p>
+				<a href="https://developer.apple.com/swift/blog/?id=6">developer.apple.com</a>
+
+				<a href="https://mikeash.com/pyblog/friday-qa-2014-07-18-exploring-swift-memory-layout.html">
+				<h2 id="memory" class="middle">Exploring Swift Memory Layout</h2></a>
+				<p>Welcome back to another exploration of Swift. Today I'm going to dig into some implementation details and explore how Swift lays out objects and classes in memory...</p>
+				<a href="https://mikeash.com/pyblog/friday-qa-2014-07-18-exploring-swift-memory-layout.html">mikeash.com</a>
+
+				<a href="http://nomothetis.svbtle.com/understanding-optional-chaining">
+				<h2 id="optional" class="middle">Understanding Optional Chaining</h2></a>
+				<p>Optionals in Swift are an interesting beast. On the one hand, they're absolutely essential to dealing with Objective-C and C methods, which can return nil and NULL at will. On the other hand, they're actually a pretty advanced concept that is tough to drop on unsuspecting developers...</p>
+				<a href="http://nomothetis.svbtle.com/understanding-optional-chaining">nomothetis.svbtle.com</a>
 			</div>
 
 			<div class="tools">
 				<h3><span class="icon"></span>TOOLS</h3>
+				
+				<a href="http://www.swifttoolbox.io/">
+				<h2 id="toolbox">Swift Toolbox</h2></a>
+				<p>A community supported catalogue of iOS and OSX libraries written in the swift programming language...</p>
+				<a href="http://www.swifttoolbox.io/">swifttoolbox.io</a>
 
-				<a id="realm" href="http://realm.io/docs/ios/0.80.0/#swift">
-				<h2>Realm</h2></a>
-				<p>Tools and libraries.Realm is a mobile database that runs directly inside phones, tablets or wearables. This is our documentation...</p>
-				<a href="http://realm.io/docs/ios/0.80.0/#swift">realm.io</a>
 			</div>
 
 			<div class="design">
 				<h3><span class="icon"></span>DESIGN</h3>
 
-				<a id="flappy" href="https://github.com/fullstackio/FlappySwift">
-				<h2>Re-creating Flappy Bird in swift</h2></a>
-				<p>Miss playing Flappy Bird? Play around with the Swift implementation of flappy bird...</p>
-				<a href="https://github.com/fullstackio/FlappySwift">www.github.com</a>
+				<a href="https://medium.com/swift-programming/ios-make-an-awesome-video-background-view-objective-c-swift-318e1d71d0a2">
+				<h2 id="video">iOS: Make an Awesome Video Background View Using UIWebView </h2></a>
+				<p> If you are a user of the Spotify iOS app, you may notice that in the new version of this app, they used a playing video as the landing view background. This is a cooler design to me when compared to static image background...</p>
+				<a href="https://medium.com/swift-programming/ios-make-an-awesome-video-background-view-objective-c-swift-318e1d71d0a2">medium.com</a>
 
-				<h2></h2>
-				<p></p>
+				<a href="http://designcode.io/swift-design">
+				<h2 id="wSwift" class="middle">Design with Swift</h2></a>
+				<p>Swift is much easier to follow, especially if you've never done iOS development before. This chapter is for designers and complete beginners. As mentioned in the Web VS Native article, I will focus on executing simple user interfaces and powerful animations instead of the language itself, which can be read in the Swift iBooks. You don't need to have the book before this chapter. I'll include all the important information for designers...</p>
+				<a href="http://designcode.io/swift-design">designcode.io</a>
+
 			</div>
+
+			<a href="02.html"><div class="back"> 
+				<h2>Previous</h2>
+			</div></a>
+
 		</div>
 
 

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="swift.css">
+	<link rel="stylesheet" href="animate.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" type="text/javascript"></script>
+	<script src="script.js" type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+			});
+		})
+	</script>
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Swift Dev Weekly: A weekly collection of Swift news</title>
+</head>
+<body>
+	
+	
+	<div class="big-wrapper">
+		<div class="banner">
+			<a href="index.html">
+				<img src="images/swift.png" class="logo" />
+				<h1 class="name">Swift Dev Weekly</h1>
+			</a>
+		</div>
+
+
+
+		<div class="issue">
+			<div class="center-content">
+				<h3>ISSUE 2</h3>
+				<h1 class="title-issue">2014 JULY 24TH</h1>
+				<!--<img src="line.png" /> -->
+				<h2>Table of Contents</h2>
+				<ul>
+					<li><a class="scroll" href="#langChanges">Swift Language Changes in Xcode 6 beta 3</a></li>
+					<li><a class="scroll" href="#arrays">Swift Arrays are fixed!</a></li>
+					<li><a class="scroll" href="#opinion">A programmer’s view of Apple’s new Swift language</a></li>
+					<li><a class="scroll" href="#init">You say Constructor Chaining, Swift says Initializer Delegation</a></li>
+					<li><a class="scroll" href="#bottom">A better way to hit bottom or finding minimums</li>
+					<li><a class="scroll" href="#optionals">Swift Optionals - Declaration, Unwrapping, and Binding</a></li>
+					<li><a class="scroll" href="#realm">Realm</li>
+					<li><a class="scroll" href="#UI">UIDynamics in Swift</li>
+				</ul>
+			</div> <!--end content-->
+		</div> 
+
+		<div class="articles center-content crossword-background">
+
+			<div class="news">
+				<h3>NEWS</h3>
+				<a href="https://developer.apple.com/swift/blog/?id=3">
+				<h2 id="langChanges">Swift Language Changes in Xcode 6 beta 3</h2></a>
+				<p>The Swift programming language continues to advance with each new Xcode 6 beta, including new features, syntax enhancements, and behavioural refinements. Xcode 6 beta 3 incorporates some important changes, a few of which we'd like highlight...</p>
+				<a href="https://developer.apple.com/swift/blog/?id=3">www.developer.apple.com</a>
+
+				<a href="https://medium.com/swift-programming/swift-arrays-are-fixed-c8310d916dea">
+				<h2 class="middle" id="arrays">Swift Arrays are fixed!</h2></a>
+				<p>If you have been following along with Swift, you would have noticed some very interesting semantics with arrays: they where completely broken! Interestingly enough, there were many people arguing in the forums and other places that this was "ok" and "good performance"...</p>
+				<a href="https://medium.com/swift-programming/swift-arrays-are-fixed-c8310d916dea">www.medium.com</a>
+
+				<a href="http://venturebeat.com/2014/06/03/a-programmers-view-of-apples-new-swift-language/">
+				<h2 class="middle" id="opinion">A programmer’s view of Apple’s new Swift language</h2></a>
+				<p>Apples's Objective-C programming is much loved. Vilified. Workable. But it appears to be on its way out the door as Apple's main programming language. Swift will probably replace it on Apple's new platforms like Yosemite and iOS 8...</p>
+				<a href="http://venturebeat.com/2014/06/03/a-programmers-view-of-apples-new-swift-language/">www.venturebeat.com</a>
+
+
+			</div>
+
+			<div class="code">
+				<h3><span class="icon"></span>CODE</h3>
+
+				<a href="http://www.codingricky.com/construtor-chaining-in-swift/">
+				<h2 id="init">You say Constructor Chaining, Swift says Initializer Delegation</h2></a>
+				<p>One of the things that one must get used to with a new language is dealing with new conventions. Now coming from mostly a Java and Ruby background, there is a notion of constructors and constructor chaining, basically when one constructor calls another one. So when it comes to Swift, there are a few rules around the methods used to create objects...</p>
+				<a href="http://www.codingricky.com/construtor-chaining-in-swift/">codingricky.com</a>
+
+				<a href="http://airspeedvelocity.net/2014/07/14/a-better-way-to-hit-bottom/">
+				<h2 class="middle" id="bottom">A better way to hit bottom or finding minimums</h2></a>
+				<p>The combination of min and reduce is an interesting one with its own wrinkles, that deserves a post of its own, so here it is. reduce takes a sequence, a starting value, and a combining function, and uses that function to boil the sequence down to a single value. For example, to total up the values in an array...</p>
+				<a href="http://airspeedvelocity.net/2014/07/14/a-better-way-to-hit-bottom/">www.airspeedvelocity.net</a>
+
+				<a href="http://www.codingexplorer.com/swift-optionals-declaration-unwrapping-and-binding/">
+				<h2 id="optionals" class="middle">Swift Optionals - Declaration, Unwrapping, and Binding</h2></a>
+				<p>In Swift, all normal variables, must have a value.  In Objective-C, C-based variables always had to have a value, but object types could either be a valid object, or a pointer to nil.  Swift optionals allow you to make any type in Swift into a nil-able type (though this nil is not exactly the same as an Objective-C nil)...</p>
+				<a href="http://www.codingexplorer.com/swift-optionals-declaration-unwrapping-and-binding/">codingexplorer.com</a>
+			</div>
+
+			<div class="tools">
+				<h3><span class="icon"></span>TOOLS</h3>
+				
+				<a href="http://realm.io/docs/ios/0.80.0/#swift">
+				<h2 id="realm">Realm</h2></a>
+				<p>Tools and libraries.Realm is a mobile database that runs directly inside phones, tablets or wearables. This is our documentation...</p>
+				<a href="http://realm.io/docs/ios/0.80.0/#swift">realm.io</a>
+
+			</div>
+
+			<div class="design">
+				<h3><span class="icon"></span>DESIGN</h3>
+
+				<a href="http://www.bignerdranch.com/blog/uidynamics-in-swift/">
+				<h2 id="UI">UIDynamics in Swift</h2></a>
+				<p>Just prior to WWDC, I'd been playing around with UIDynamics, so it seemed logical enough that my first steps in Swift should be to try building on that knowledge. Turns out, UIDynamics in Swift is pretty much just like using it in Objective-C. We just need to drape it in the Swifty Goodness™ and it will work just like it's expected to...</p>
+				<a href="http://www.bignerdranch.com/blog/uidynamics-in-swift/">www.nomothetis.svbtle.com</a>
+
+			</div>
+
+			<a href="01.html"><div class="back"> 
+				<h2>Previous</h2>
+			</div></a>
+
+		</div>
+
+
+		<div class="footer">
+			<div class="center-content">
+				<img src="images/subscribe.png" class="center" />
+				<p>Sign up to get a weekly update delivered right to your inbox. Sent once a week, 
+				the newsletter contains the latest tools added to the site each week. We will 
+				never send you spam - your email address will only ever be used to send you 
+				the weekly newsletter, and you can unsubscribe at any time.</p>
+
+				<form action="http://swiftdevweekly.us8.list-manage.com/subscribe/post" method="POST">
+					<input type="hidden" name="u" value="09bd4e2289da9fbd7f9eff309">
+					<input type="hidden" name="id" value="4df192d64a">
+					<ul>
+						<li><input type="email" placeholder="Enter your email address" value required name="MERGE0" id="MERGE0" /><button value="subscribe" class="button" /> Subscribe </li>
+					</ul>
+				</form>
+
+			</div> <!--end content-->
+		</div> 
+
+	</div>
+<script src="wow.min.js"></script>
+<script>
+ new WOW().init();
+</script>
+</body>
+</html>
